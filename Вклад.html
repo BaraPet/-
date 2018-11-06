@@ -1,0 +1,21 @@
+﻿<meta charset="utf-8">
+<script>
+
+	
+	var a = parseInt(prompt('сумма вклада'));
+	if ( isNaN(a)) {
+alert ( " Нужно вводить числа! " );}
+	var b = parseInt(prompt('% годовых'));
+	if ( isNaN(b)) {
+alert ( " Нужно вводить числа! " );}
+	var c = parseInt(prompt('кол-во лет'));
+	if ( isNaN(c)) {
+alert ( " Нужно вводить числа! " );}
+
+	for (var t=1; t<=c; t++) {
+		var d = parseInt( (a*b)/100);
+		var a = parseInt( d+a);
+		alert(a);
+		}
+</script>
+
